@@ -4,19 +4,21 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
   <loc>https://www.scsiz.com/</loc>
-</url>
-<url>
-  <loc>https://www.scsiz.com/t/qixi.html</loc>
 </url>
 <url>
   <loc>https://www.scsiz.com/about</loc>
 </url>
 <url>
   <loc>https://www.scsiz.com/tags</loc>
+</url>
+<url>
+  <loc>https://www.scsiz.com/t/tianya.html</loc>
+</url>
+<url>
+  <loc>https://www.scsiz.com/t/qixi.html</loc>
 </url>
 <url>
   <loc>https://www.scsiz.com/t/sunflower.html</loc>
@@ -43,12 +45,6 @@
   <loc>https://www.scsiz.com/t/Flowers-fly-swing.html</loc>
 </url>
 <url>
-  <loc>https://www.scsiz.com/t/Looking-back-2016.html</loc>
-</url>
-<url>
-  <loc>https://www.scsiz.com/t/Send-you-sunshine.html</loc>
-</url>
-<url>
   <loc>https://www.scsiz.com/page/2/</loc>
 </url>
 <url>
@@ -56,6 +52,9 @@
 </url>
 <url>
   <loc>https://www.scsiz.com/page/4/</loc>
+</url>
+<url>
+  <loc>https://www.scsiz.com/archives/2017/09/</loc>
 </url>
 <url>
   <loc>https://www.scsiz.com/archives/2017/08/</loc>
@@ -130,6 +129,12 @@
   <loc>https://www.scsiz.com/tags/verse/</loc>
 </url>
 <url>
+  <loc>https://www.scsiz.com/t/Looking-back-2016.html</loc>
+</url>
+<url>
+  <loc>https://www.scsiz.com/t/Send-you-sunshine.html</loc>
+</url>
+<url>
   <loc>https://www.scsiz.com/t/7-Zip.html</loc>
 </url>
 <url>
@@ -169,10 +174,10 @@
   <loc>https://www.scsiz.com/t/the-night-dead.html</loc>
 </url>
 <url>
-  <loc>https://www.scsiz.com/t/chang-xiang-si.html</loc>
+  <loc>https://www.scsiz.com/t/another-Seven-law.html</loc>
 </url>
 <url>
-  <loc>https://www.scsiz.com/t/another-Seven-law.html</loc>
+  <loc>https://www.scsiz.com/t/chang-xiang-si.html</loc>
 </url>
 <url>
   <loc>https://www.scsiz.com/t/bai-ci-ling.html</loc>
