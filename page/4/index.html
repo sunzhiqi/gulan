@@ -1,388 +1,1266 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-    
-    <title>孤岚</title>
+<html style="display: none;" lang="zh">
+    <head>
     <meta charset="utf-8">
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net/gh/viosey/hexo-theme-material@latest/source"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
     
-    <meta name="title" content="孤岚">
-    <meta name="description" content="记录生活，发现感动，分享快乐！">
-    <meta property="og:image" content="/favicon.png">
-    <meta property="og:image:width" content="200" />
-    <meta property="og:image:height" content="200" />
+    <title>
+        
+        孤岚
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="https://cdn.jsdelivr.net/gh/viosey/hexo-theme-material@1.5.6/source/img/favicon.png">
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/viosey/hexo-theme-material@1.5.6/source/img/favicon.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="记录生活，发现感动，分享快乐！">
+    <meta name="keywords" content="孤岚">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
     
-    <link href="https://fonts.loli.net/css2?family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.loli.net/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","https://cdn.jsdelivr.net/gh/viosey/hexo-theme-material@latest/source/css/material.min.css",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","https://cdn.jsdelivr.net/gh/viosey/hexo-theme-material@latest/source/css/style.min.css",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
     <style>
-        body {
-            font-family: 'Source Serif Pro', 'Source Han Serif SC', 'Noto Serif CJK SC', 'Noto Serif SC', serif;
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <style>
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-300.eot);
+            src: local('Roboto'),local('Roboto-Normal'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-300.eot?#iefix) format('embedded-opentype'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-300.woff2) format('woff2'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-300.woff) format('woff'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-300.ttf) format('truetype'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-300.svg#Roboto) format('svg')
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: regular;
+            src: url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-regular.eot);
+            src: local('Roboto'),local('Roboto-Normal'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-regular.eot?#iefix) format('embedded-opentype'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-regular.woff2) format('woff2'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-regular.woff) format('woff'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-regular.ttf) format('truetype'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-regular.svg#Roboto) format('svg')
+        }
+
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-500.eot);
+            src: local('Roboto'),local('Roboto-Normal'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-500.eot?#iefix) format('embedded-opentype'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-500.woff2) format('woff2'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-500.woff) format('woff'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-500.ttf) format('truetype'),url(https://lib.baomitu.com/fonts/roboto/roboto-v15-latin-500.svg#Roboto) format('svg')
         }
     </style>
-    <link rel="shortcut icon" href="/favicon.png">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","https://cdn.jsdelivr.net/gh/viosey/hexo-theme-material@latest/source/css/material-icons.css",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
     
-    <link rel="stylesheet"
-        href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/arduino-light.min.css">
-    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+        <script>lsloader.load("jq_js","https://cdn.jsdelivr.net/gh/viosey/hexo-theme-material@latest/source/js/jquery.min.js", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="孤岚">
+    <meta name="msapplication-starturl" content="https://www.scsiz.com/page/4/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="孤岚">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/viosey/hexo-theme-material@1.5.6/source/img/favicon.png">
+
+    <!-- Site Verification -->
     
     
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="/js/jquery.min.js"></script>
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://www.scsiz.com/page/4/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="孤岚">
+    <meta property="og:image" content="https://cdn.jsdelivr.net/gh/viosey/hexo-theme-material@1.5.6/source/img/favicon.png">
+    <meta property="og:description" content="记录生活，发现感动，分享快乐！">
+    
+
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://www.scsiz.com/page/4/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+        <script>
+    var _hmt = _hmt || [];
+    (function() {var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?95eadb480867fe35d710430ab9ff997c';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+    
+    
+
+    <!-- Custom Head -->
+    
+
 </head>
 
-<body>
-    <header class="header">
-    <div class="blog-title">
-        <a href="/" class="logo">孤岚</a>
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Index Module -->
+<div class="material-index mdl-grid">
+    
+    <div class="locate-thumbnail-symbol"></div>
+
+    <!-- Pin on top -->
+    
+
+    <!-- Normal Post -->
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/t/Laugh-and-cry.html">回眸一笑泪潸然</a></p>
     </div>
-    <nav class="navbar">
-        <ul class="menu">
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            淡淡青春悲已逝，可怜往事如烟，琉璃泡影漫飞天。残红飘旧梦，细雨满江南。纵有山盟心已碎，此心碎了不堪，回眸一笑泪潸然。来生相遇处，掐指算馀年。
+淡淡年华流远去，匆匆往事无言，人间况味是清欢，欢难心底去，泪也不禁弹。只问轮回因果否？但能酒醉馀年，红尘泡影本如烟，凄凉人醒处，别有夜阑珊。
+
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/t/Laugh-and-cry.html" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="https://cdn.jsdelivr.net/gh/viosey/hexo-theme-material@1.5.6/source/img/avatar.png" width="44px" height="44px" alt="孙行者's avatar">
+            </div>
+            <div>
+                <strong>孙行者</strong>
+                <span>10月 13, 2014</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
             
             
+        
+    
+        
             
-            <li class="menu-item">
-                
-                <a href="/" class="menu-item-link">主页</a>
-                
-            </li>
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/t/castle-of-life.html">你是我生命里，最坚固的城邦</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            天下有那么多城邦城邦有那么多街巷你没有早一步也没有晚一步来到我身边我相信你就是我的、命运……不管 哪一天 你离我远去我依然相信命运就像曾经相信天空坠落的流星雨是每一个承诺的实现如果时光可以倒流我愿用一生挽留如果时光不能倒流我愿化作冬天的落雪不管我将要赴向何方那一天
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/t/castle-of-life.html" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="https://cdn.jsdelivr.net/gh/viosey/hexo-theme-material@1.5.6/source/img/avatar.png" width="44px" height="44px" alt="孙行者's avatar">
+            </div>
+            <div>
+                <strong>孙行者</strong>
+                <span>9月 05, 2014</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
             
             
+        
+    
+        
             
-            <li class="menu-item">
-                
-                <a href="/archives" class="menu-item-link">归档</a>
-                
-            </li>
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/t/Woman-in-Poetry.html">唐诗宋词里的女子</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            引子•春归怨春浅，红怨，垂柳丝。三千溺水红尘路，长袖裹风，愁绪满腹。欲展心事抚素琴，却是，弦断伤指，泣不成谱。何曲能解此中忧，一水茫茫，孤影无助。我是唐诗宋词里走出的女子，愁赋千篇，悲歌万阙。蓦地一相逢，心事眼波难定的《如梦令》，是我的沉醉。烛花摇影，冷透疏衾刚欲醒的《减字木兰花》，是我的心事。
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/t/Woman-in-Poetry.html" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="https://cdn.jsdelivr.net/gh/viosey/hexo-theme-material@1.5.6/source/img/avatar.png" width="44px" height="44px" alt="孙行者's avatar">
+            </div>
+            <div>
+                <strong>孙行者</strong>
+                <span>8月 23, 2014</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
             
             
+        
+    
+        
             
-            <li class="menu-item">
-                
-                <a href="/about" class="menu-item-link">关于</a>
-                
-            </li>
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/t/feng-xi-wu.html">凤栖梧</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            不道良人音讯杳，只道思量，五年无一笑。
+兰台挂印为登高，不见复关见衰草。
+再世相逢应年少，绿鬓朱颜，连骖金陵道。
+酒暖塌温花正好，衡门之下堪共老。
+
+
+
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/t/feng-xi-wu.html" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="https://cdn.jsdelivr.net/gh/viosey/hexo-theme-material@1.5.6/source/img/avatar.png" width="44px" height="44px" alt="孙行者's avatar">
+            </div>
+            <div>
+                <strong>孙行者</strong>
+                <span>8月 06, 2014</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/t/One-without-title.html">无题</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            日落冬残万物零，
+雪降风飏亦自惊。
+沈园春色空对月，
+谢女秋容鬓已星。
+无缘相见应绝念，
+有尽浮生更多情。
+两年辛苦终未醒，
+误我年华莫误卿。 
+
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/t/One-without-title.html" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="https://cdn.jsdelivr.net/gh/viosey/hexo-theme-material@1.5.6/source/img/avatar.png" width="44px" height="44px" alt="孙行者's avatar">
+            </div>
+            <div>
+                <strong>孙行者</strong>
+                <span>7月 26, 2014</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/t/If.html">若</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            　　江南，烟花三月。　　燕草如碧丝，秦桑低绿枝，正是草长莺飞时。绿杨烟外晓寒轻，花随流落水自留。这是一个美好的时节，正如在我最美好的年华，遇见最深情的你。　　他和她邂逅在凄凄的杜鹃声里，细碎的梨花如雨般纷飞，漫天的花雨中他们相视一笑，刹那间，沧海桑田，恍然若千年。　　江南的三月多雨，如丝的小雨从未断绝。烟雨迷蒙的古镇，厚重的青石路，小桥流水，和着他们的身影，勾勒...
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/t/If.html" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="https://cdn.jsdelivr.net/gh/viosey/hexo-theme-material@1.5.6/source/img/avatar.png" width="44px" height="44px" alt="孙行者's avatar">
+            </div>
+            <div>
+                <strong>孙行者</strong>
+                <span>6月 23, 2014</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/t/Rainy-Mood.html">留得枯荷听雨声——Rainy Mood白噪声网站</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            
+2020-09-22 添加厅雨，一个简单的在线听雨声和古典音乐的小站戳我进入厅雨 厅雨收集了五首具有代表性的音乐，这五首音乐依次是：《In Autumn,the Leaves ...
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/t/Rainy-Mood.html" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="https://cdn.jsdelivr.net/gh/viosey/hexo-theme-material@1.5.6/source/img/avatar.png" width="44px" height="44px" alt="孙行者's avatar">
+            </div>
+            <div>
+                <strong>孙行者</strong>
+                <span>6月 23, 2014</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/t/One-time-mailbox.html">一次性临时邮箱：隐匿真实邮箱，杜绝垃圾邮件</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            　　在大家日常上网的时候，我们肯定不可避免的会遇到需要使用邮箱注册并且进行验证的情况，但是在大多数的时候，我们仅仅只是为了浏览一篇文章，或者是下载一份资料，大家肯定都不喜欢用自己常用的邮箱去注册，除了担心源源不断的垃圾邮件之外，对于自身隐私的需要，让我们对自己常用的邮箱更加谨慎，也许在之前在注册不重要的账号的时候你会频繁更换不同邮箱来避免自己的，但是麻烦的操作并不是每个人都可以忍受的，...
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/t/One-time-mailbox.html" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="https://cdn.jsdelivr.net/gh/viosey/hexo-theme-material@1.5.6/source/img/avatar.png" width="44px" height="44px" alt="孙行者's avatar">
+            </div>
+            <div>
+                <strong>孙行者</strong>
+                <span>6月 02, 2014</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/t/the-night-dead.html">夜殇</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            　　今夜月华如水，惨淡的月光如同一丝丝莫名的忧伤，在这氤氲的天地间蔓延，慢慢的溶入血液，渗入骨髓。　　今夜微风习习，轻柔的晚风有如情人的纤纤素手，轻轻拂过脸颊，却不曾留下一丝牵挂，半分留恋。　　今夜万籁俱寂，不闻人语，只有星光点点，渺渺犬吠鸡鸣。　　人不眠，月无语，夜亦未殇。　　不敢月下邀明月，只愿明月照我心。我愿用三分落寞，七分谦卑，匍匐在地上来仰视。...
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/t/the-night-dead.html" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="https://cdn.jsdelivr.net/gh/viosey/hexo-theme-material@1.5.6/source/img/avatar.png" width="44px" height="44px" alt="孙行者's avatar">
+            </div>
+            <div>
+                <strong>孙行者</strong>
+                <span>5月 30, 2014</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/t/chang-xiang-si.html">长相思</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            双成个，谙为陌，风摇红雨身畔过，怎奈欢情薄。   
+梦飘落，泪执着， 依依顾盼携手处，却已化蹉跎。  
+
+
+by 甲骨文
+
+
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/t/chang-xiang-si.html" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="https://cdn.jsdelivr.net/gh/viosey/hexo-theme-material@1.5.6/source/img/avatar.png" width="44px" height="44px" alt="孙行者's avatar">
+            </div>
+            <div>
+                <strong>孙行者</strong>
+                <span>5月 26, 2014</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+
+    
+    <!-- Index nav -->
+        <nav class="material-nav mdl-cell mdl-cell--12-col">
+            <a class="extend prev" rel="prev" href="/page/3/"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons" role="presentation">arrow_back</i></button></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/5/"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons" role="presentation">arrow_forward</i></button></a>
+        </nav>
+    
+
+    
+        <script type="text/ls-javascript" id="thumbnail-script">
+    var randomNum;
+
+    var locatePost = $('.locate-thumbnail-symbol').next();
+    for(var i = 0; i < 10; i++) {
+        randomNum = Math.floor(Math.random() * 19 + 1);
+
+        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
+        locatePost.children('.post_thumbnail-random').attr('data-original', 'https://cdn.jsdelivr.net/gh/viosey/hexo-theme-material@1.5.6/source/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+
+        locatePost = locatePost.next();
+    }
+</script>
+
+    
+</div>
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(https://cdn.jsdelivr.net/gh/viosey/hexo-theme-material@1.5.6/source/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="https://cdn.jsdelivr.net/gh/viosey/hexo-theme-material@1.5.6/source/img/avatar.png" alt="孙行者's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        i@scsiz.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=UCc-PDYjJSYQISF_Mz89" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
             
         </ul>
-    </nav>
-</header>
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?95eadb480867fe35d710430ab9ff997c";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2020/09/">九月 2020<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/11/">十一月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/10/">十月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/07/">七月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/10/">十月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/09/">九月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/08/">八月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/07/">七月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/06/">六月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/05/">五月 2017<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/03/">三月 2017<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/02/">二月 2017<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/01/">一月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/02/">二月 2016<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2015/12/">十二月 2015<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2015/09/">九月 2015<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2014/10/">十月 2014<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2014/09/">九月 2014<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2014/08/">八月 2014<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2014/07/">七月 2014<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2014/06/">六月 2014<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2014/05/">五月 2014<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2014/04/">四月 2014<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2014/03/">三月 2014<span class="sidebar_archives-count">8</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/about" title="关于我">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                关于我
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/tags" title="标签云">
+                
+                标签云
+            </a>
+        </li>
+        
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+        <a href="https://www.zhihu.com/people/wolfsuv" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-zhihu">
+                <span class="visuallyhidden">Zhihu</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;孤岚
+            
+        </div>
+
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","https://cdn.jsdelivr.net/gh/viosey/hexo-theme-material@latest/source/js/lazyload.min.js", true)</script>
+
+
+
+    <script>lsloader.load("js_js","https://cdn.jsdelivr.net/gh/viosey/hexo-theme-material@latest/source/js/js.min.js", true)</script>
+
+
+
+    <script>lsloader.load("np_js","https://cdn.jsdelivr.net/gh/viosey/hexo-theme-material@latest/source/js/nprogress.js", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
 </script>
-    <main class="main">
-        <section class="posts">
-    
-    <article class="post">
-        <div class="post-title">
-            <a class="post-title-link" href="/t/Laugh-and-cry.html">回眸一笑泪潸然</a>
-        </div>
-        <div class="post-content">
-            
-            <p>淡淡青春悲已逝，可怜往事如烟，琉璃泡影漫飞天。残红飘旧梦，细雨满江南。<br>纵有山盟心已碎，此心碎了不堪，回眸一笑泪潸然。来生相遇处，掐指算馀年。</p>
-<p>淡淡年华流远去，匆匆往事无言，人间况味是清欢，欢难心底去，泪也不禁弹。<br>只问轮回因果否？但能酒醉馀年，红尘泡影本如烟，凄凉人醒处，别有夜阑珊。</p>
-<p><img src="https://img.scsiz.com/64.jpg" alt="回眸一笑泪潸然"></p>
 
-            
-        </div>
-        <div class="post-meta">
-            
-            <span class="post-time">二〇一四年十月十三日</span>
-        </div>
-    </article>
-    
-    <article class="post">
-        <div class="post-title">
-            <a class="post-title-link" href="/t/castle-of-life.html">你是我生命里，最坚固的城邦</a>
-        </div>
-        <div class="post-content">
-            
-            <p>天下有那么多城邦<br>城邦有那么多街巷<br>你没有早一步<br>也没有晚一步来到我身边<br>我相信你就是我的、命运……<br>不管 哪一天 你离我远去<br>我依然相信命运<br>就像曾经相信<br>天空坠落的流星雨<br>是每一个承诺的实现<br>如果时光可以倒流<br>我愿用一生挽留<br>如果时光不能倒流<br>我愿化作冬天的落雪<br>不管我将要赴向何方<br>那一天<br>我暮然回首<br>只为在人群中多看你一眼<br>不修来生<br>只为途中与你相遇</p>
 
-            
-        </div>
-        <div class="post-meta">
-            
-            <span class="post-time">二〇一四年九月五日</span>
-        </div>
-    </article>
-    
-    <article class="post">
-        <div class="post-title">
-            <a class="post-title-link" href="/t/Woman-in-Poetry.html">唐诗宋词里的女子</a>
-        </div>
-        <div class="post-content">
-            
-            <p><strong>引子•春归怨</strong><br>春浅，红怨，垂柳丝。<br>三千溺水红尘路，长袖裹风，愁绪满腹。<br>欲展心事抚素琴，却是，弦断伤指，泣不成谱。<br>何曲能解此中忧，一水茫茫，孤影无助。<br>我是唐诗宋词里走出的女子，愁赋千篇，悲歌万阙。<br>蓦地一相逢，心事眼波难定的《如梦令》，是我的沉醉。<br>烛花摇影，冷透疏衾刚欲醒的《减字木兰花》，是我的心事。<br>笺书直恁无凭据，休说相思的《落花时》，是我的无奈。<br>人生若只如初见，何事秋风悲画扇的《木兰花令 拟古决绝词》，是我的伤悲。<br>纵使东风依旧，怕红颜不似的《好事近》，是我的幽怨。<br>若问生涯原是梦，除梦里，没人知的《江城子》，是我的落寞。<br>繁华落尽，唯思念依存。<br>摆渡红尘，谁是谁的谁。</p>
-<p><strong>初遇•少年游</strong><br>小生青衫南江住，杨柳岸，盈盈舞。风茂年华谁为主？<br>骄阳万点，落红无数，尽在春光处。<br>深情终归深情误，莫道情深只是苦。人生相逢多默语。<br>身影陡长，春暮绵缠，难行天涯路。<br>忆相逢，怀远难穷，无物似情浓，纵写离肠万种，犹恐相逢是梦中。<br>道不清的萧瑟，渲入笺痕。<br>青衫，是广寒卷不起的长袖，挥舞离尘的词阙，踏浪漂泊。<br>烟波浩淼楚江中，以一叶扁舟，成就万水千山的相随。<br>我在唐诗宋词里端坐千年，只为等这一场盛世里的遇见。<br>婉约的相思，只为你独醉。</p>
-<p><strong>相思•玉蝴蝶</strong><br>红衫轻束纤腰，春好处逍遥。竹露湿青瑶，箫风舞柳梢。<br>烟飞休怅远，眉浅不须描。桃朵正添娇，玉人琼靥飘。<br>三更无眠，挑灯西窗。微弱之光，犹如一种沉思，梦幻、落寞恍然而至。<br>犹记牵手岁月，软语浅笑荡于耳畔；携手同游，绿柳拂波映于眼前。<br>“胜绝，愁亦绝，此情谁共说”。<br>这逝水流年，花深芳径，蝶舞满天都在暗夜未央的梦里迷离了过往，扯断了轮回。<br>你，若曾是当年湖畔饮酒作诗的书生。<br>我，必是江南桥岸与你凝眸深望的女子。<br>前世，你允我生死与共。<br>今生，我还你海誓山盟。<br>今生重来与君相逢。待回首时。淡墨湿青衫。<br>放眼，仿见一个女子在幽夜细雨窗前弄着思念的结。<br>“枕一辈红颜怎堪落寂”，痴情总比，红尘几许伤心泪，都化尘烟。<br>一年一岁，一山一水，绕绕转转，心在纷扰的喧嚣里落寂，为落幕黯然神伤。<br>今夜化思念为指尖的尘，弹落满地的心事。<br>红尘中又有落寂的痴情女子了……</p>
-<p><strong>相忆•惜分飞</strong><br>虽说一厢，两地思念，三才难觅心系天。<br>了伤悲，绝了妄念，四海为家难觅峰巅。<br>才丢五岳，又去六岭，七出海阔任翻腾。<br>茫茫乾坤佳人弄琴声，八月水乡君子横笛翠。<br>九天长，十难还；百折不回，笑留芳。<br>千里江波，醉红颜；万缕青衫与吾辗转。<br>叹红楼杰作唯宝黛神传，满腔浓情难被薄言冲淡。<br>万般无奈也说前缘，老骥伏励，千里志。<br>群山环抱，百夜凉；十里长街，雨飞竭；九声脆，心热烈。<br>八方笙歌醉戏洞庭月，举杯滔滔笑谈英雄泪。<br>七进中原堪负重，六出祁山，五丈星陨。<br>四面楚歌何惧壮烈，爱真切，事未终结。<br>三顾金陵春秋梦，两处闲愁，一地生成。<br>前尘往事，不堪回首，又何必追寻，<br>但愿来生我能身做一泓秋水，还这未了的情缘，亦或化为唐宋诗篇，长眠君身边。 </p>
-<p><img src="https://img.scsiz.com/58.jpg" alt="唐诗宋词里的女子"></p>
 
-            
-        </div>
-        <div class="post-meta">
-            
-            <span class="post-time">二〇一四年八月廿三日</span>
-        </div>
-    </article>
-    
-    <article class="post">
-        <div class="post-title">
-            <a class="post-title-link" href="/t/feng-xi-wu.html">凤栖梧</a>
-        </div>
-        <div class="post-content">
-            
-            <p>不道良人音讯杳，只道思量，五年无一笑。</p>
-<p>兰台挂印为登高，不见复关见衰草。</p>
-<p>再世相逢应年少，绿鬓朱颜，连骖金陵道。</p>
-<p>酒暖塌温花正好，衡门之下堪共老。</p>
-<p><img src="https://img.scsiz.com/55.jpg" alt="凤栖梧"></p>
-<blockquote>
-<p>by 草暗天涯</p>
-</blockquote>
 
-            
-        </div>
-        <div class="post-meta">
-            
-            <span class="post-time">二〇一四年八月六日</span>
-        </div>
-    </article>
-    
-    <article class="post">
-        <div class="post-title">
-            <a class="post-title-link" href="/t/One-without-title.html">无题</a>
-        </div>
-        <div class="post-content">
-            
-            <p>日落冬残万物零，</p>
-<p>雪降风飏亦自惊。</p>
-<p>沈园春色空对月，</p>
-<p>谢女秋容鬓已星。</p>
-<p>无缘相见应绝念，</p>
-<p>有尽浮生更多情。</p>
-<p>两年辛苦终未醒，</p>
-<p>误我年华莫误卿。 </p>
-<p><img src="https://img.scsiz.com/52.jpg" alt="无题"></p>
-<blockquote>
-<p>by 草暗天涯</p>
-</blockquote>
 
-            
-        </div>
-        <div class="post-meta">
-            
-            <span class="post-time">二〇一四年七月廿六日</span>
-        </div>
-    </article>
-    
-    <article class="post">
-        <div class="post-title">
-            <a class="post-title-link" href="/t/If.html">若</a>
-        </div>
-        <div class="post-content">
-            
-            <p>　　江南，烟花三月。<br>　　燕草如碧丝，秦桑低绿枝，正是草长莺飞时。绿杨烟外晓寒轻，花随流落水自留。这是一个美好的时节，正如在我最美好的年华，遇见最深情的你。<br>　　他和她邂逅在凄凄的杜鹃声里，细碎的梨花如雨般纷飞，漫天的花雨中他们相视一笑，刹那间，沧海桑田，恍然若千年。<br>　　江南的三月多雨，如丝的小雨从未断绝。烟雨迷蒙的古镇，厚重的青石路，小桥流水，和着他们的身影，勾勒出一幅世间最美的水墨画。青石台阶绿，流水望无痕。他和她究竟是行在在画中，抑或是从画中走出来，这一切，对他们来说已经不在重要。何妨画中人，相伴到白首？徘徊在远山的流岚，细雨缠绵，只是，那连绵不断的，又岂止是无尽的眷恋？<br>　　一封家书，万里愁，你白衣胜雪，而我衣诀飘飘。你笑靥如花，我却暗自神伤。风依旧轻轻地拂过，拨乱了谁的秀发，又凌乱了谁的心弦？<br>　　最终，他踏上了回塞北的路，而她，却留在江南，一如他们相逢前。临行，她送他一把油纸伞，笑着对他说：“这是江南特产，并且，它很特别。”他轻轻的接过油纸伞，含笑不语，悄悄地取下悬在腰际的玉佩，拉着她的手，轻轻地放在她手心，然后挥手作别。<br>　　于是他跃马而去，终已不顾，只留下满地烟尘，一路牵挂。她的心，岂非早已经随他而去？<br>　　落花如泪水滴在心间，残花满地，柳絮飘飘，落红点点，也许有泪水划过她的面颊，和风终将会慢慢带走她的眼泪，风干她的哀思，但是却让她的思念益加厚重。眼泪，是咸的，心呢？<br>　　于是他回到了塞北，开始了他的生活，一如他从前。只是那把油纸伞，从未打开，却已被丢到一边——他没有雨天打伞的习惯。<br>　　一系列的变故，阴差阳错间他成为家族里最年轻的族长候选人，英俊潇洒，玉树临风的他光芒万丈，也成为无数少女暗暗追求的对象。不过他从来不为之所动，甚至不惜忤逆家门长辈断然拒绝了几桩公认的门当户对天造地设的婚事。只是常有仆人在暗地里看到他轻轻地抚摸着那把从江南带回来的油纸伞，万般怜爱，柔情似水。他本就是一个充满侠骨柔情的男子……<br>　　时光依依呀呀走过斑驳的黄昏，一陌花开，一曲残殇，徒留下谁人浅吟低唱？<br>　　他第一次打开伞是在一年以后，他在一堆杂物发现了它，但他觉得有些东西似乎不应该就这样简单丢掉，譬如，他手中的这把伞。于是他小心翼翼地打开油纸伞，那一瞬间，恍如隔世，他突然想起她，想起那种充满江南女子灵气与秀美的笑容。然后他在伞纸上看见一行娟秀的小字：如果你想我了，请回来找我，好吗？<br>　　如果你想我了，请回来找我，好吗？他觉得自己肺部的空气一瞬间被抽离出来，那会不会只是，一种窒息感？<br>　　他似乎看到她憔悴的倚在西楼上，眺望着他离去的方向，望眼欲穿，因为，她知道，那里也终将是他出现的地方……<br>　　油纸伞从他手中悄然滑落，却重重地打在他的心上。他觉得自己的胸口在隐隐作痛，还有那突然随之袭来的愧疚感和负罪感。他以为他可以忘记，正如忘记自己的过去，忘记自己。但是他突然明白，原来她一直都在他的心底，不必提起，却从未离去……<br>　　如果你想我了，请回来找我，好吗？<br>　　大漠风沙，谁在反弹着琵琶，长河落日，谁人痴痴的吹箫？日夜交替，斗转星移，他在纵马狂奔，因为他知道，在那遥远的江南，在那迷蒙的山水中，有人在等他……<br>　　于是他再次站在漫天的花雨中，梨花纷飞依旧。只是，他是一个人……<br>　　清香小径，老榕树，残花满地，只是柴扉早已紧闭。只有一块玉佩静静的悬挂在门前的老榕树上，兀自随风而动……<br>　　他呆呆的坐在老树下的柴扉前，看落叶纷飞，路过的邻人告诉他，她在三天前已经出嫁了，只是出嫁那天，她身披嫁衣，站在门前的老榕树下踮起脚向北望了好久好久……</p>
-<p><img src="https://img.scsiz.com/47.jpg" alt="若"></p>
 
-            
-        </div>
-        <div class="post-meta">
-            
-            <span class="post-time">二〇一四年六月廿三日</span>
-        </div>
-    </article>
-    
-    <article class="post">
-        <div class="post-title">
-            <a class="post-title-link" href="/t/Rainy-Mood.html">留得枯荷听雨声——Rainy Mood白噪声网站</a>
-        </div>
-        <div class="post-content">
-            
-            <blockquote>
-<p>2020-09-22 添加厅雨，一个简单的在线听雨声和古典音乐的小站<br><strong><a href="http://tingyu.pro/" target="_blank" rel="external">戳我进入厅雨</a></strong><br> 厅雨收集了五首具有代表性的音乐，这五首音乐依次是：<br>《In Autumn,the Leaves Came to Our House》<br>《Theme From Schindler’s List》 小提琴悠扬且伤感，适合一个人听<br>《Emmanuel》小号吹奏，演奏者是 Chris Botti<br>《舒伯特-小夜曲》温柔细腻的钢琴曲，适合入眠<br>《Lament》 大提琴演奏<br>《The Night King 》权利的游戏第8季配乐</p>
-</blockquote>
-<p>“很多时候，我只是与孤独为伴”<br>只希望在这夜深人静，或灯火阑珊，或尘世喧嚣中，厅雨能够带给你一丝独特的感受。<br>当屋外雨声萧萧<br>甚至可以听到风在草地掠过<br>带着琴声悠悠</p>
-<p>　　RainyMood网站的界面十分简洁，只有一幅雨滴在窗户上不断滴落的画面，缓冲几秒之后就可以听到下雨的声音，雨声时而大时而小，但是并不突兀，十分和谐。期间还不时的出现雷声和鸟叫虫鸣，显得十分幽静深邃，对于调节心情具有非常好的效果，熬夜学习备考或者加班的人来说，实在是放松身心，隔离外界烦扰的最佳方式。<br>　　除此之外，Rainy Mood网站每天还会推出一首精选的适合用作背景音乐的歌曲MV。但是让人遗憾的是，Rainy Mood网站推荐的音乐来源于国外的Youtube网站（因众所周知的原因，国内用户无法访问,如果你想要观看Rainy Mood网站每日推荐的音乐MV，请自行寻找梯子）</p>
-<p>这里提供Rainy Mood网站原版声音下载，不方便总是打开网页的朋友可以下载到手机里，独自一人戴上耳机效果更好哦！<br><strong><a href="https://share.weiyun.com/5Gwx5Nz" target="_blank" rel="external">戳我下载</a></strong></p>
 
-            
-        </div>
-        <div class="post-meta">
-            
-            <span class="post-time">二〇一四年六月廿三日</span>
-        </div>
-    </article>
-    
-    <article class="post">
-        <div class="post-title">
-            <a class="post-title-link" href="/t/One-time-mailbox.html">一次性临时邮箱：隐匿真实邮箱，杜绝垃圾邮件</a>
-        </div>
-        <div class="post-content">
-            
-            <p>　　在大家日常上网的时候，我们肯定不可避免的会遇到需要使用邮箱注册并且进行验证的情况，但是在大多数的时候，我们仅仅只是为了浏览一篇文章，或者是下载一份资料，大家肯定都不喜欢用自己常用的邮箱去注册，除了担心源源不断的垃圾邮件之外，对于自身隐私的需要，让我们对自己常用的邮箱更加谨慎，也许在之前在注册不重要的账号的时候你会频繁更换不同邮箱来避免自己的，但是麻烦的操作并不是每个人都可以忍受的，而今天为大家分享的临时邮箱就可以完美的解决这些问题！这些临时邮箱完全无需注册，打开网页即可随机生成一个邮箱账号，并且可以正常收取邮件进行注册验证，不仅非常实用，而且十分便捷！<br><strong>十分钟邮箱 ：10分钟自动销毁的邮箱 </strong><br><img src="https://img.scsiz.com/44-1.png" alt="十分钟邮箱"><br><strong><a href="http://mail.bccto.me/" target="_blank" rel="external">戳我直达</a></strong><br> yopmail ：不需要注册——YopMail包含所有的邮箱帐户<br> <img src="https://img.scsiz.com/44-2.png" alt="十分钟邮箱"><br> <strong><a href="http://www.yopmail.com/zh/" target="_blank" rel="external">戳我直达</a></strong></p>
 
-            
-        </div>
-        <div class="post-meta">
-            
-            <span class="post-time">二〇一四年六月二日</span>
-        </div>
-    </article>
-    
-    <article class="post">
-        <div class="post-title">
-            <a class="post-title-link" href="/t/the-night-dead.html">夜殇</a>
-        </div>
-        <div class="post-content">
-            
-            <p>　　今夜月华如水，惨淡的月光如同一丝丝莫名的忧伤，在这氤氲的天地间蔓延，慢慢的溶入血液，渗入骨髓。<br>　　今夜微风习习，轻柔的晚风有如情人的纤纤素手，轻轻拂过脸颊，却不曾留下一丝牵挂，半分留恋。<br>　　今夜万籁俱寂，不闻人语，只有星光点点，渺渺犬吠鸡鸣。<br>　　人不眠，月无语，夜亦未殇。<br>　　不敢月下邀明月，只愿明月照我心。我愿用三分落寞，七分谦卑，匍匐在地上来仰视。月岂止高高的悬挂在渺渺寒空，更幻化在心灵之上，那是生命所不能企及的高度。举杯邀明月，对影成三人。也许酒未入肠，人却已先醉。哪怕醉他个昏天暗地，沧海桑田，那又何妨？<br>　　风过树林，树影摇曳，月影斑驳。碎成一地银花。伸手掬一捧月光，未饮已先醉。那份深深烙印着的亿万年亘古不变的清高孤傲，跨越时空，圣洁的使人如梦如幻。时间会在某个瞬间停下脚步吗？不会吗？也许唯有此夜，此月，此景。月夜如梦如幻，人却早已痴迷留连，只是不知远方故人，可曾入眠？若有虫鸣，不闻心声，何来秋浦，与之共勉？<br>　　月光如水，却洗不去满世浮华，流不尽萧索落寞。一曲残殇，半城烟沙。风为殇，残月几分凉，几点流萤寒夜长。心未热，夜已殇。<br>　　人不眠，月无语，夜却已殇。<br>　　秋风起，孤星淡，夜色愈加厚重。唯有寒月高悬深空，那亿万年亘古不变的月光，冷冷地倾泻在田原草野上。不曾悲，亦未喜。其实月光是永恒的，流逝的亦不是时间，而是我们。也许每天的月夜都会相似，可惜人却早已不同……<br>　　月宫中的桂树断又复长，不见玉兔捣药，仙人垂足，唯有那一轮寒月 ，月光无情。试问吴刚，月亮之上，岂有殇乎？ </p>
-<p><img src="https://img.scsiz.com/43.jpg" alt="夜殇"></p>
 
-            
-        </div>
-        <div class="post-meta">
-            
-            <span class="post-time">二〇一四年五月三十日</span>
-        </div>
-    </article>
-    
-    <article class="post">
-        <div class="post-title">
-            <a class="post-title-link" href="/t/another-Seven-law.html">七律</a>
-        </div>
-        <div class="post-content">
-            
-            <p>楼外花枝绕柳枝，柳枝散叶入清池。</p>
-<p>望月徒怀人无应，临渊空羡鱼不知。</p>
-<p>龙荪晚年唯好雉，兰清早岁即有诗。</p>
-<p>已定平生长寂寞，未知永夜钟鼓迟。 </p>
-<p><img src="https://img.scsiz.com/41.jpg" alt="七律"></p>
-<blockquote>
-<p>by 草暗天涯</p>
-</blockquote>
 
-            
-        </div>
-        <div class="post-meta">
-            
-            <span class="post-time">二〇一四年五月廿六日</span>
-        </div>
-    </article>
-    
-</section>
 
+
+
+<!-- UC Browser Compatible -->
 <script>
-    var Home = location.href,
-    xhr,
-    xhrUrl = '';
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
 
-    var Diaspora = {
-        L: function(url, f, err) {
-            if (url == xhrUrl) {
-                return false;
-            }
-            xhrUrl = url;
-            if (xhr) {
-                xhr.abort();
-            }
-            xhr = $.ajax({
-                type: 'GET',
-                url: url,
-                timeout: 10000,
-                success: function(data) {
-                    f(data);
-                    xhrUrl = '';
-                },
-                error: function(a, b, c) {
-                    if (b == 'abort') {
-                        err && err()
-                    } else {
-                        window.location.href = url;
-                    }
-                    xhrUrl = '';
-                }
-            });
-        },
-        loading: function() {
-            var w = window.innerWidth;
-            var css = '<style class="loaderstyle" id="loaderstyle'+ w +'">'+
-                '@-moz-keyframes loader'+ w +'{100%{background-position:'+ w +'px 0}}'+
-                '@-webkit-keyframes loader'+ w +'{100%{background-position:'+ w +'px 0}}'+
-                '.loader'+ w +'{-webkit-animation:loader'+ w +' 3s linear infinite;-moz-animation:loader'+ w +' 3s linear infinite;}'+
-                '</style>';
-            $('.loaderstyle').remove()
-            $('head').append(css)
-            $('#loader').removeClass().addClass('loader'+ w).show()
-        },
-        loaded: function() {
-            $('#loader').removeClass().hide()
-        }
-    };
+<!-- Import prettify js  -->
 
-    $(function() {
-        $('body').on('click', function(e) {
-            var tag = $(e.target).attr('class') || '',
-                rel = $(e.target).attr('rel') || '';
-            if (!tag && !rel) return;
-            switch (true) {
-                // next page
-                case (tag.indexOf('more') != -1):
-                    tag = $('.more');
-                    if (tag.data('status') == 'loading') {
-                        return false
-                    }
-                    var num = parseInt(tag.data('page')) || 1;
-                    if (num == 1) {
-                        tag.data('page', 1)
-                    }
-                    tag.html("加载中...").data('status', 'loading')
-                    Diaspora.loading()
-                    Diaspora.L(tag.attr('href'), function(data) {
-                        tag.hide();
-                        $('.license').hide();
-                        var link = $(data).find('.more').attr('href');
-                        if (link != undefined) {
-                            tag.attr('href', link).html("旧文").data('status', 'loaded')
-                            tag.data('page', parseInt(tag.data('page')) + 1)
-                        } else {
-                            $('body').remove()
-                        }
-                        var tempScrollTop = $(window).scrollTop();
-                        $('body').append($(data).find('.posts'))
-                        $(window).scrollTop(tempScrollTop + 100);
-                        Diaspora.loaded()
-                        //$('html,body').animate({ scrollTop: tempScrollTop + 400 }, 500);
-                        if (link !== '/') {
-                            $('body').append($(data).find('.page-nav'))
-                        }
-                        $('body').append($(data).find('.license'))
-                    }, function() {
-                        tag.html("旧文").data('status', 'loaded')
-                    })
-                    return false;
-                    break;
-                default:
-                    return true;
-                    break;
-            }
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
         });
-    })
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
 </script>
 
-<nav class="page-nav">
-  <a href="/page/5/" class="more">旧文</a>
-</nav>
+<!-- Custom Footer -->
 
-<p class="license">Copyright © 2013 - 2020 孤岚</p>
-    </main>
-</body>
 
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 2013;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+
+</script>
+
+                </main>
+            </div>
+        </body>
+    
 </html>
