@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /t/
-Sitemap: https://www.gcd.pp.ua/sitemap.xml
+Sitemap: https://www.icefox.eu.org//sitemap.xml
