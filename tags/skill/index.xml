@@ -1,38 +1,46 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>skill - 标签 - 孤岚</title>
-    <link>https://www.dogc.pp.ua/tags/skill/</link>
+    <link>https://www.780009.xyz/tags/skill/</link>
     <description>skill - 标签 - 孤岚</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 25 Mar 2023 14:26:33 &#43;0800</lastBuildDate><atom:link href="https://www.dogc.pp.ua/tags/skill/" rel="self" type="application/rss+xml" /><item>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 25 Mar 2023 14:26:33 &#43;0800</lastBuildDate><atom:link href="https://www.780009.xyz/tags/skill/" rel="self" type="application/rss+xml" /><item>
   <title>佳能800d基础入门知识</title>
-  <link>https://www.dogc.pp.ua/posts/800d/</link>
+  <link>https://www.780009.xyz/posts/800d/</link>
   <pubDate>Sat, 25 Mar 2023 14:26:33 &#43;0800</pubDate>
   <author>作者</author>
-  <guid>https://www.dogc.pp.ua/posts/800d/</guid>
+  <guid>https://www.780009.xyz/posts/800d/</guid>
   <description><![CDATA[📷档位介绍 M档全手动模式：相机的光圈、快门、iso、色温等等都可以由你自主调整。 A档光圈优先模式： A档光圈优先模式也是景深优先自动曝光组合。]]></description>
 </item>
 <item>
+  <title>公文写作框架</title>
+  <link>https://www.780009.xyz/posts/gongwen/</link>
+  <pubDate>Wed, 22 Feb 2023 09:51:40 &#43;0000</pubDate>
+  <author>作者</author>
+  <guid>https://www.780009.xyz/posts/gongwen/</guid>
+  <description><![CDATA[法定公文写法 （13种） 1 命令(令) 命令和令是用于依照有关法律公布行政法规和规章，宣布施行重大强制性行政措施，嘉奖有关单位及人员的文种。此类文]]></description>
+</item>
+<item>
   <title>BitLocker加密入门</title>
-  <link>https://www.dogc.pp.ua/posts/bitlocker/</link>
+  <link>https://www.780009.xyz/posts/bitlocker/</link>
   <pubDate>Fri, 16 Mar 2018 16:28:25 &#43;0000</pubDate>
   <author>作者</author>
-  <guid>https://www.dogc.pp.ua/posts/bitlocker/</guid>
+  <guid>https://www.780009.xyz/posts/bitlocker/</guid>
   <description><![CDATA[BitLocker 是 Windows 7 及其以上版本的操作系统提供的一种基于分区的加密方式。BitLocker 不仅仅可以加密本机硬盘分区，还可以加密移动硬盘、U盘、SD 卡等]]></description>
 </item>
 <item>
   <title>一次性临时邮箱：隐匿真实邮箱，杜绝垃圾邮件</title>
-  <link>https://www.dogc.pp.ua/posts/one-time-mailbox/</link>
+  <link>https://www.780009.xyz/posts/one-time-mailbox/</link>
   <pubDate>Mon, 02 Jun 2014 10:22:44 &#43;0000</pubDate>
   <author>作者</author>
-  <guid>https://www.dogc.pp.ua/posts/one-time-mailbox/</guid>
+  <guid>https://www.780009.xyz/posts/one-time-mailbox/</guid>
   <description><![CDATA[在大家日常上网的时候，我们肯定不可避免的会遇到需要使用邮箱注册并且进行验证的情况，但是在大多数的时候，我们仅仅只是为了浏览一篇文章，或者是下]]></description>
 </item>
 <item>
   <title>使用Word制作电子公章（图文教程）</title>
-  <link>https://www.dogc.pp.ua/posts/use-word-make-seals/</link>
+  <link>https://www.780009.xyz/posts/use-word-make-seals/</link>
   <pubDate>Sun, 09 Mar 2014 17:09:44 &#43;0000</pubDate>
   <author>作者</author>
-  <guid>https://www.dogc.pp.ua/posts/use-word-make-seals/</guid>
+  <guid>https://www.780009.xyz/posts/use-word-make-seals/</guid>
   <description><![CDATA[除了使用专业软件来制作电子公章外，Word本身也是一个非常好的制作公章的工具，这里介绍一下如何使用Word制作单位/公司的电子公章。 当然网上]]></description>
 </item>
 </channel>
